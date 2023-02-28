@@ -5,7 +5,7 @@
   "main": "tut62.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "start": "nodemon "
   },
   "author": "Aditya",
   "license": "ISC",
