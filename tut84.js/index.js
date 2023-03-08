@@ -6,9 +6,9 @@ db.items2.insertOne({ name: 'Aditya' }) // After db we can give another collecti
 
 db.items.find() // this is to get all the items in the collections
 
-db.items.updateOne({ name: 'Kahna' }, { $set: { fvrt_food: 'Roti Sabzi' } }) // To update one data in the items
+db.items.updateOne({ name: 'Kahna' }, { $set: { fvrt_food: 'Roti Sabzi' } }) // To update one data in the items / first argument is filter and second argument is that what to change
 
 
-db.items.updateMany({ name: 'Kahna' }, { $set: { fvrt_food: 'Pani Puri' } }) // To update Many data in the items
+db.items.updateMany({ name: 'Kahna' }, { $set: { fvrt_food: 'Pani Puri' } }) // To update Many data in the items / first argument is filter and second argument is that what to change
 
 
