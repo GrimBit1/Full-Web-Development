@@ -3,6 +3,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use('/public',express.static('static'))
+
 app.get('/',(req,res)=>{
     res.send('hi')  
     res.sendFile(`${__dirname}/index.html`)
