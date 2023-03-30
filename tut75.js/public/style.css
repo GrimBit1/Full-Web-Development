@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+
+#navbar {
+  background-color: black;
+  padding: 13px 14px;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar ul li {
+  list-style: none;
+  padding: 2px 14px;
+  color: white;
+}
+
+#navbar ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  padding: 2px 12px;
+  border-radius: 12px;
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+#introsection {
+  height: 300px;
+
+  /* opacity: 0.8; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  position: relative;
+  z-index: 1;
+}
+#introsection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background-image: url("https://images.unsplash.com/photo-1495109251996-432ef0887b37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(0.7);
+}
+
+#sponsersection {
+  height: 300px;
+  background-color: rgba(255, 255, 0, 0.535);
+  position: relative;
+}
+#sponsersection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    background-image: url("https://images.unsplash.com/photo-1530374195309-8c25022c4753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0.7);
+  }
+
+#footer {
+  height: 100px;
+  background-color: black;
+}
