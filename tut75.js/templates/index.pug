@@ -4,22 +4,35 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        //- meta(http-equiv="refresh" content="2")
-        style 
-            include ../public/style.css
-        title Dance Acadeny
+        meta(http-equiv="refresh" content="30")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    style 
+        include ../public/style.css
+    title Dance Acadeny
     body
         nav#navbar 
             ul
                 li #[a(href="/") Home]
                 li #[a(href="/") About]
                 li #[a(href="/") Services]
-                li #[a(href="/") Class Info]  
+                li.lastLi #[a(href="/") Class Info]  
 
         section#introsection
-            div Welcome to Aditya's Dance Academy
+            div
+                h1  Welcome to Aditya's Dance Academy
             div Eat Sleep Dance Repeat
+        section#ourmissionsection
+            h2 Our Mission Section Here
+            div.cards
+                div.card
+                    h3 Dance Perfection
+                div.card
+                    h3 Dance the way you like
+                div.card
+                    h3 Expert Teaching
         section#sponsersection
-            |SponserSection Here
+            h2 SponserSection Here
         footer#footer 
 

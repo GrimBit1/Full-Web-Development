@@ -4,6 +4,8 @@
   padding: 0;
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Alkatra", cursive;
+  letter-spacing: 2px;
 }
 html {
   scroll-behavior: smooth;
@@ -14,17 +16,18 @@ body {
 
 #navbar {
   background-color: black;
-  padding: 13px 14px;
+  padding: 21px 20px;
 }
 
 #navbar ul {
   display: flex;
   justify-content: center;
+  gap: 3vw;
 }
 
 #navbar ul li {
   list-style: none;
-  padding: 2px 14px;
+  padding: 2px 1vw;
   color: white;
 }
 
@@ -35,6 +38,7 @@ body {
   padding: 2px 12px;
   border-radius: 12px;
   transition: background-color 0.5s ease, color 0.3s ease;
+  font-size: 120%;
 }
 
 #navbar ul li a:hover {
@@ -43,8 +47,8 @@ body {
 }
 
 #introsection {
-  height: 300px;
-
+  height: 70vh;
+  
   /* opacity: 0.8; */
   display: flex;
   flex-direction: column;
@@ -70,28 +74,64 @@ body {
   background-size: cover;
   filter: grayscale(0.7);
 }
+#introsection div h1{
+  text-align: center;
+}
 
+#ourmissionsection {
+  min-height: 35vh;
+  background-color: rgba(255, 255, 255, 0.869);
+  padding: 12px 0;
+}
+#ourmissionsection h2 {
+  text-align: center;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3vw;
+
+}
+.card {
+  aspect-ratio: 1.16/1;
+  width: 307px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 12px;
+}
+.card h3 {
+  text-align: center;
+}
 #sponsersection {
   height: 300px;
-  background-color: rgba(255, 255, 0, 0.535);
+  background-color: rgba(255, 255, 0, 0.435);
   position: relative;
 }
 #sponsersection::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    z-index: -1;
-    background-image: url("https://images.unsplash.com/photo-1530374195309-8c25022c4753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-    background-position: center;
-    background-size: cover;
-    filter: grayscale(0.7);
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background-image: url("https://images.unsplash.com/photo-1530374195309-8c25022c4753?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(0.7);
+}
 
 #footer {
   height: 100px;
   background-color: black;
+}
+
+@media screen and (max-width: 590px) {
+  .lastLi{
+    display: none;
+  }
 }
