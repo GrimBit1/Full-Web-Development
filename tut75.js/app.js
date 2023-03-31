@@ -10,7 +10,7 @@ const port = 80;
 
 //Pug Specific Stuff
 
-app.use("/", express.static("/public"));
+app.use("/public", express.static(`${__dirname}/public`));
 
 app.use(express.urlencoded({extended:true}))
 

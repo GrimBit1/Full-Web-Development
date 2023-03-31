@@ -16,10 +16,23 @@ body {
 
 #navbar {
   background-color: black;
-  padding: 21px 20px;
-}
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  height: 8vh;
+}
+#img {
+  justify-self: self-end;
+  height: 65%;
+}
+img[alt="Logo"] {
+  height: 100%;
+  filter: invert(1);
+}
 #navbar ul {
+  align-items: center;
   display: flex;
   justify-content: center;
   gap: 3vw;
@@ -35,7 +48,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: inherit;
-  padding: 2px 12px;
+  padding: 2px 0.6vw;
   border-radius: 12px;
   transition: background-color 0.5s ease, color 0.3s ease;
   font-size: 120%;
@@ -48,7 +61,7 @@ body {
 
 #introsection {
   height: 70vh;
-  
+
   /* opacity: 0.8; */
   display: flex;
   flex-direction: column;
@@ -74,7 +87,7 @@ body {
   background-size: cover;
   filter: grayscale(0.7);
 }
-#introsection div h1{
+#introsection div h1 {
   text-align: center;
 }
 
@@ -93,10 +106,10 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 3vw;
-
 }
 .card {
-  aspect-ratio: 1.16/1;
+  /* aspect-ratio: 1.16/1; */
+  height: 264px;
   width: 307px;
   background-color: white;
   border: 2px solid black;
@@ -104,6 +117,18 @@ body {
 }
 .card h3 {
   text-align: center;
+}
+.card .card-box {
+  height: 85%;
+  padding: 4px;
+}
+.card .card-box .img {
+  height: 82%;
+  display: flex;
+  justify-content:center;
+}
+.card .card-box .img img {
+  height: 100%;
 }
 #sponsersection {
   height: 300px;
@@ -131,7 +156,7 @@ body {
 }
 
 @media screen and (max-width: 590px) {
-  .lastLi{
+  .lastLi {
     display: none;
   }
 }
