@@ -1,0 +1,44 @@
+extends base.pug
+block style 
+    link(rel="stylesheet", href="/public/style.css")
+block scripts 
+    script(src='/public/script.js')
+
+block content
+    section#introsection
+        div
+            h1  Welcome to Aditya's Dance Academy
+        div Eat Sleep Dance Repeat
+    section#ourmissionsection
+        h2 Our Mission Section Here
+        div.cards
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.img 
+                        img(src="/public/img/1.png" alt="1") 
+                    div.card-content 
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing.
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.img 
+                        img(src="/public/img/2.png" alt="2") 
+                    div.card-content 
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing.
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.img 
+                        img(src="/public/img/3.png" alt="3") 
+                    div.card-content 
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing.
+    section#sponsersection
+        h2 SponserSection Here
+        div#sponsers
+            img(src="/public/img/logo1.png" alt="Sponser image") 
+            img(src="/public/img/logo2.png" alt="Sponser image") 
+            img(src="/public/img/logo3.png" alt="Sponser image") 
+            img(src="/public/img/logo4.png" alt="Sponser image") 
+
+    

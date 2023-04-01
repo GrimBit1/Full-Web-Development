@@ -20,10 +20,20 @@ app.set("views", "templates");
 app.set("view engine", "pug");
 
 
+
 app.get("/", (req, res) => {
   // res.status(404).send('Hi')
-  res.render("index", {
+  res.render("home", {
     message: "Hi, this is pug",
+    title:'Home'
+  });
+
+});
+app.get("/contact", (req, res) => {
+  // res.status(404).send('Hi')
+  res.render("contact", {
+    message: "Hi, this is pug",
+    title:'Home'
   });
 
 });

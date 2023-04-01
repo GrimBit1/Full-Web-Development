@@ -1,63 +1,4 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
-  font-family: "Alkatra", cursive;
-  letter-spacing: 2px;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  background-color: black;
-}
 
-#navbar {
-  background-color: black;
-  padding: 0px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 8vh;
-}
-#img {
-  justify-self: self-end;
-  height: 65%;
-}
-img[alt="Logo"] {
-  height: 100%;
-  filter: invert(1);
-}
-#navbar ul {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  gap: 3vw;
-}
-
-#navbar ul li {
-  list-style: none;
-  padding: 2px 1vw;
-  color: white;
-}
-
-#navbar ul li a {
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit;
-  padding: 2px 0.6vw;
-  border-radius: 12px;
-  transition: background-color 0.5s ease, color 0.3s ease;
-  font-size: 120%;
-}
-
-#navbar ul li a:hover {
-  background-color: white;
-  color: black;
-}
 
 #introsection {
   height: 70vh;
@@ -172,21 +113,8 @@ transition: all ease 0.5s;
 }
 #sponsers img:hover{
 background-color: rgb(215, 213, 213);
-translate: 0 -5px;
+transform: translate(0 -5px);
 box-shadow: 0px 9px 20px 0px black;
 
 }
-#footer {
-  height: 100px;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-@media screen and (max-width: 590px) {
-  .lastLi {
-    display: none;
-  }
-}
