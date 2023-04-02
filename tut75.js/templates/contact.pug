@@ -1,13 +1,16 @@
 extends base.pug
 block style 
-    link(rel="stylesheet", href="/public/contact.css")
+    link(rel="stylesheet" href="/public/contact.css")
 block content
     h1 Contact Us
     div.container
         div#img1
-        form(action="/contact", method="post" class='myForm' )
+        form(action="/contact" method="post" class='myForm' )
             input(type="text" class='myInput' name ='myname' placeholder='Enter Your Full Name' required)
-            input(type="text" class='myInput' name ='myemail' placeholder='Enter Your Email' required)
-            input(type="text" class='myInput' name ='mynumber' placeholder='Enter Your Number' required)
+            input(type="email" class='myInput' name ='myemail' placeholder='Enter Your Email' required)
+            input(type="number" class='myInput' name ='mynumber' placeholder='Enter Your Number' required)
             input(type="text" class='myInput' name ='myconcern' placeholder='Enter Your Concern')
-            input(type="submit", value="Submit" class='myInput')
+            input(type="submit" value="Submit" class='myInput')
+block scripts
+    script
+        |if(`#{alertMessage}`!= ''){alert(`#{alertMessage}`)}
